@@ -1,0 +1,449 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* to convert rem to 10px and i made a mistake by putting it in the body tag cant rectify my mistake because I have gone to far */
+/* html {
+    font-size: 62.5%;
+} */ 
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    border: none;
+    font: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'Epilogue', sans-serif;
+    line-height: 1.5rem;
+    background-color: rgb(240, 237, 229);
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.font-weight-900 {
+    font-weight: 900;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.gray-text {
+    color: rgb(128, 126, 122);
+}
+
+
+
+body,
+main,
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 7.2rem;    
+}
+
+.wrapper,
+.nav-container {
+    max-width: 87%;
+    margin-inline: auto;
+    font-size: 1rem;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgb(240, 237, 229);
+    border-bottom: 1px rgb(218, 215, 208) solid;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-icon-container {
+    border-radius: 4px;
+    height: 2.7rem;
+    width: 4.1rem;
+    background-color: rgb(228, 225, 217);
+    margin-top: 0.3rem;
+}
+
+.nav-menu-container,
+.nav-menu-container ul {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo-container {
+    border-left: 1px rgb(218, 215, 208) solid;
+    border-right: 1px rgb(218, 215, 208) solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo-container h1 {
+    font-size: 2rem;
+    padding: 1.2rem 1.5rem 1rem 1.5rem;
+}
+
+.nav-menu-container i {
+    font-size: 1.5rem;
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 65%;
+}
+
+.welcome-section h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+.welcome-section button {
+    background-color: black;
+    color: white;
+    border-radius: 0.28rem;
+    width: 7.4rem;
+    height: 2.9rem;
+    margin-top: 1rem;
+}
+
+/* CARD FORMATTING */
+.card-outer-container {
+    border-top: 1px rgb(218, 215, 208) solid;
+    background-color: rgb(228, 225, 217);
+}
+
+.card-circle-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: rgb(229, 226, 218);
+    border-radius: 50%;
+}
+
+.card-inner-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    margin-top: 0.8rem;
+    margin-bottom: 3.9rem;
+}
+
+.card-header-container {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.card-header-container p {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.card-text-container {
+    line-height: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.cards-section {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(auto, 5.8rem);
+    gap: 1rem;
+    border-bottom: 1px solid rgb(218, 215, 208);
+    padding-bottom: 1.5rem;
+} 
+
+.card-talenti {
+    grid-row: span 3;
+    grid-column: span 1;
+}
+
+.card-birds-eye-fish {
+    grid-row: span 4;
+    grid-column: span 3;
+}
+
+.card-karen-cole,
+.card-1hq-netherlands-turns-5 {
+    grid-row: span 4;
+    grid-column: span 1;
+}
+
+.card-karen-cole .card-inner-container {
+    margin-bottom: 0.8rem;
+}
+
+.card-1hq-wins-gold {
+    grid-row: 4 / span 3;
+    grid-column: span 1;
+}
+
+.card-optibac {
+    grid-row: 6 / span 6;
+    grid-column: span 3;
+}
+
+.card-cif {
+    grid-row: 5 / span 4;
+    grid-column: 5 / span 2;
+}
+
+.card-1hq-success,
+.card-birds-eye-helping {
+    grid-row: span 3;
+    grid-column: 1 / span 1;
+}
+
+.card-madam {
+    grid-column: 5 / span 1;
+    grid-row: 9 / span 3;
+}
+
+.card-lumiradx {
+    grid-column: 6 / span 1;
+    grid-row: 9 / span 3;
+}
+
+.card-mother-clucker {
+    grid-row: 12 / span 3;
+    grid-column: 2 / span 2;
+}
+
+.card-peperami {
+    grid-row: 13/ span 3;
+    grid-column: 4 / span 2;
+}
+
+.card-vita-liberata {
+    grid-row: 13 / span 3;
+    grid-column: 6 / span 1;
+}
+
+.card-avaton {
+    grid-column: 1 / span 2;
+    grid-row: 16 / span 6;
+}
+
+.card-bcp {
+    grid-row: 17 / span 4;
+    grid-column: 3 / span 2;
+}
+
+.card-valio {
+    grid-row: 17 / span 4;
+    grid-column: 5 / span 1;
+}
+
+.card-good-vibes {
+    grid-row: 16 / span 3;
+    grid-column: 6 / span 1;
+}
+
+.card-graham-wall {
+    grid-row: 19 / span 4;
+    grid-column: 6 / span 1;
+}
+
+.card-hungry-horse {
+    grid-row: 21 / span 3;
+    grid-column: 5 / span 1;
+}
+
+.card-natures-heart {
+    grid-row: 21/ span 4;
+    grid-column: 3 / span 2;
+}
+
+.card-how-heinz {
+    grid-row: 22 / span 3;
+    grid-column: 1 / span 1;
+}
+
+.card-manilife {
+    grid-row: 24 / span 5;
+    grid-column: 5 / span 2;
+}
+
+.card-chinese-new-year {
+    grid-column: 4 / span 1;
+    grid-row: 25 / span 4;
+}
+
+.card-cornetto-rose {
+    grid-row: 25 / span 6;
+    grid-column: 2 / span 2;
+}
+
+.card-cultural-diversity {
+    grid-row: 26 / span 3;
+    grid-column: 1/ span 1;
+}
+
+.card-vanessa-miller {
+    grid-row: 29 / span 4;
+    grid-column: 1 / span 1;
+}
+
+.card-your-round {
+    grid-row: 29 / span 3;
+    grid-column: 5 / span 1;
+}
+
+.card-amsterdam-light-festival {
+    grid-row: 29 / span 5;
+    grid-column: 6 / span 1;
+}
+
+.card-1hq-moi {
+    grid-row: 33 / span 2;
+    grid-column: 1 / span 1;
+}
+
+.card-natures-heart-crunch {
+    grid-row: 31 / span 4;
+    grid-column: 2 / span 2;
+}
+
+.card-dr-max {
+    grid-row: 32 / span 4;
+    grid-column: 4 / span 2;
+}
+
+.card-1hq-work {
+    grid-row: 34 / span 2;
+    grid-column: 6 /span 1;
+}
+
+.card-helping-local-brewers {
+    grid-row: 35 / span 3;
+    grid-column: 1 /span 1;
+}
+
+.card-catherine-quirke {
+    grid-row: 36 / span 4;
+    grid-column: 6 /span 1;
+}
+
+.card-1hq-usa,
+.card-green-cuisine {
+    margin-top: 0.5rem;
+}
+
+.card-1hq-usa {
+    grid-row: 36 / span 3;
+    grid-column: 5 /span 1;
+}
+
+.card-green-cuisine {
+    grid-row: 36 / span 4;
+    grid-column: 2 / span 3;
+}
+
+.card-in-high-spirits {
+    grid-row: 38 / span 3;
+    grid-column: 1 /span 1;
+}
+
+/* HELLO AGAIN SECTION */
+.hello-again-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 85%;
+    padding-block: 6rem;
+}
+
+.hello-again-text-container h1 {
+    font-size: 2.7rem;
+    line-height: 2.7rem;
+}
+
+.hello-again-text-container p {
+    color: red;
+}
+
+.hello-again-button-container {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.hello-again-button-container :first-child,
+.hello-again-button-container :last-child {
+    border-radius: 0.28rem;
+    height: 2.8rem;
+    margin-top: 1rem;
+}
+
+.hello-again-button-container :first-child {
+    color: white;
+    background-color: black;
+    width: 9rem;
+}
+
+.hello-again-button-container :last-child {
+    color: black;
+    background-color: rgb(228, 225, 217);
+    width: 7.4rem;
+}
+
+/* FOOTER STYLING */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0 2.3rem 0;
+    border-top: 1px solid rgb(218, 215, 208);
+}
+
+.footer-link-container {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 50%;
+}
+
+.footer-image-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-image-inner-container{
+    width: 70px;
+    height: 70px;
+    border: 1px black solid;
+    border-radius: 50%;
+}
