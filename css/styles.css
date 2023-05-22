@@ -140,7 +140,6 @@ header {
 /* CARD FORMATTING */
 .card-outer-container {
     border-top: 1px rgb(218, 215, 208) solid;
-    background-color: rgb(228, 225, 217);
 }
 
 .card-circle-icon {
