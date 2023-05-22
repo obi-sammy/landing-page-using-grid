@@ -1,4 +1,4 @@
-**Link to project:**[[https://.netlify.app](https://admirable-faun-6d75ba.netlify.app/)](https://admirable-faun-6d75ba.netlify.app/)
+**Link to project:**[link to project](https://admirable-faun-6d75ba.netlify.app/)
 
 ## Description:
 To make UI using grid for layout and a little flexbox
