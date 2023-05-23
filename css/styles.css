@@ -87,6 +87,9 @@ header {
     width: 4.1rem;
     background-color: rgb(228, 225, 217);
     margin-top: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-menu-container,
