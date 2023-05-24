@@ -52,7 +52,10 @@ body {
     color: rgb(128, 126, 122);
 }
 
-
+.big-card-text {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+}
 
 body,
 main,
