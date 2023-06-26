@@ -7,7 +7,7 @@ To make UI using grid for layout and a little flexbox
 
 **Tech used:** HTML, Vanilla CSS.
 
-##Areas for Improvement :
+## Areas for Improvement :
 - [ ] Make responsive at different screen sizes
 - [ ] Add animation
 - [ ] Add specific styling to each card
